@@ -26,6 +26,32 @@ node:1
 ->
 ```
 
+##Import the project to eclipse
+ * Download <a href="http://www.eclipse.org" target="_blank">Eclipse</a> into your computer if you don't have it installed.
+ * Add sbteclipse to your plugin definition file (or create one if doesn't exist). You can use either:
+  * The global file (for version 0.13 and up) at ~/.sbt/0.13/plugins/plugins.sbt
+  * The project-specific file at PROJECT_DIR/project/plugins.sbt
+<br>For the latest version:
+```
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
+
+```
+ * In the Open_Chord_Scala directory, run command:
+
+```
+->sbt eclipse
+```
+ * From the eclipse IDE, import the project to workspace, File->Import->Existing Projects into Workspace.
+ * Note you might need to add Akka package into eclipse, to do so:
+  * Download the latest version of <a href="http://akka.io/downloads/" target="_blank"> Akka Actor</a>
+  * In eclipse, right click the Open_Chord_Scala project,go Build Paths -> Add External Archives ...
+ * Note that if you want to run it from eclipse, main function is in **src/main/scala/service/Main.scala**
+ 
+##Supports and further improvement.
+This is project can't be done without the support of my supervisors and advisors, <a href="http://www.cs.utah.edu/~ganesh/" target="_blank">Ganesh Gopalakrishnan</a> and Mohammed S. Al-Mahfoudh. Also, thanks to the help from my partner Heath J. French.
+<br>I am still working on it to make this project bettter, and I like to hear any advice to help make it better. Your advice is invaluable for me, please email me at allenzhaofromu@gmail.com if you think any aspect of the project can be made better.
+
+
 
 
 
