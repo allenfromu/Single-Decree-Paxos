@@ -1,4 +1,4 @@
-name := "Paxos"
+name := "Single-Decree-Paxos"
 
 version := "0.1"
 
