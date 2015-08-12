@@ -12,7 +12,8 @@ Paxos is a neat algorithm to solve the consensus problem. It was firstly describ
  * Clone the project from repo: https://github.com/allenfromu/Single-Decree-Paxos.git
  * Go to the Single-Decree-Paxos directory from terminal and then run command: 
  ``` 
- -> sbt run
+ 
+   -> sbt run
  ```
-
+**Note that if you want to run different nodes from the only one computer, you can just use the predefined paxos.config file without adding any thing. I set up a system with 5 nodes, you need to at least run 3 different nodes in order to propose a value to a system. If you decides to run the system within different computers, you need to modify the paxos.config file without changing anything else. I suggest a system with 3 or 5 nodes, that way the majority size of the system is 2 or 3. It is important that the information you put in the paxos.config should be in order and exactly in the right format. Each line carries the information of a unique node (id host port). All different nodes should share a same paxos.config.**
 
