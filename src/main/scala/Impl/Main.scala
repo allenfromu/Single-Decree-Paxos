@@ -7,6 +7,18 @@ import java.util.logging.SimpleFormatter
 import java.util.logging.FileHandler
 import java.util.logging.Logger
 
+/**
+ * I make this main class to test the paxos behavior, once users run this class, it set up a 
+ * paxos server with a selected id. In this example, I assume there are 5 replicated machiness
+ * within a system, the information of the replicated machiens is in the paxos.config. I am using
+ * host name '127.0.0.1' for each node. users should run at least 3 nodes with ids among 1-5 to
+ * be able to propose a value.
+ * At the same time, users can use this main class as a client to ask each existing paxos to propose
+ * a value by simply run command 'propose' from the console.
+ * 
+ * @author zepeng zhao
+ */
+
 object Main extends App{
   override def main(args:Array[String]){
      var logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME)
