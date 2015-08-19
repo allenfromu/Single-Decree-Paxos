@@ -43,9 +43,6 @@ addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
 ->sbt eclipse
 ```
  * From the eclipse IDE, import the project to workspace, File->Import->Existing Projects into Workspace.
- * Note you might need to add Akka package into eclipse, to do so:
-  * Download the latest version of <a href="http://akka.io/downloads/" target="_blank"> Akka Actor</a>
-  * In eclipse, right click the Single-Decree-Paxos project,go Build Paths -> Add External Archives ...
  * Note that if you want to run it from eclipse, main function is in **src/main/scala/Impl/Main.scala**
  
 ##Supports and further improvement.
